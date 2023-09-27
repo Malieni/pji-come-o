@@ -4,20 +4,64 @@
     <title>Escolha de Investimento</title>
     <style>
         body {
-            text-align: center;
-            margin-top: 100px; /* Espaço superior para centralizar verticalmente */
+            background-color: #fff; /* Fundo branco */
+            color: #000; /* Texto preto */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            overflow: hidden; /* Impede que as imagens fiquem fora da tela */
+            position: relative;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         button {
-            font-size: 24px; /* Aumenta o tamanho do texto do botão */
-            padding: 10px 20px; /* Aumenta o espaço interno do botão */
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #00ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #ff00ff;
+        }
+
+        /* Estilo das imagens das criptomoedas */
+        .crypto-icon {
+            position: absolute;
+            width: 100px; /* Largura das imagens */
+            height: auto; /* Altura ajustada automaticamente para manter proporções */
+            animation: float 6s ease-in-out infinite; /* Animação de flutuação */
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); } /* Define a altura máxima da flutuação */
         }
     </style>
 </head>
 <body>
     <h1>Escolha o tipo de investimento:</h1>
     <button onclick="redirecionarRendaFixa()">Renda Fixa</button>
-    <button onclick="redirecionarRendaVariavel()">Renda Variavel</button>
+    <button onclick="redirecionarRendaVariavel()">Renda Variável</button>
+
+    <!-- Imagens das criptomoedas espalhadas na tela -->
+    <img class="crypto-icon" src="bitcoin.svg" alt="Bitcoin" style="left: 10%; top: 20%;">
+    <img class="crypto-icon" src="ethereum.svg" alt="Ethereum" style="left: 40%; top: 50%;">
+    <img class="crypto-icon" src="litecoin.svg" alt="Litecoin" style="left: 70%; top: 80%;">
+    <!-- Adicione mais imagens de criptomoedas aqui -->
 
     <script>
         function redirecionarRendaFixa() {
