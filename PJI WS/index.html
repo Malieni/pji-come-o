@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha de Investimento</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px; /* Espaço superior para centralizar verticalmente */
+        }
+
+        button {
+            font-size: 24px; /* Aumenta o tamanho do texto do botão */
+            padding: 10px 20px; /* Aumenta o espaço interno do botão */
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha o tipo de investimento:</h1>
+    <button onclick="redirecionarRendaFixa()">Renda Fixa</button>
+    <button onclick="redirecionarRendaVariavel()">Renda Variavel</button>
+
+    <script>
+        function redirecionarRendaFixa() {
+            window.location.href = "renda_fixa.html";
+        }
+
+        function redirecionarRendaVariavel() {
+            window.location.href = "renda_variavel.html";
+        }
+    </script>
+</body>
+</html>
