@@ -1,72 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-    <title>Escolha de Investimento</title>
-    <style>
-        body {
-            background-color: #fff; /* Fundo branco */
-            color: #000; /* Texto preto */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: "Arial", sans-serif;
-            overflow: hidden; /* Impede que as imagens fiquem fora da tela */
-            position: relative;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
 
-        button {
-            font-size: 24px;
-            padding: 10px 20px;
-            background-color: #00ff00;
-            color: #000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px 0;
-        }
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 
-        button:hover {
-            background-color: #ff00ff;
-        }
-
-        /* Estilo das imagens das criptomoedas */
-        .crypto-icon {
-            position: absolute;
-            width: 100px; /* Largura das imagens */
-            height: auto; /* Altura ajustada automaticamente para manter proporções */
-            animation: float 6s ease-in-out infinite; /* Animação de flutuação */
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); } /* Define a altura máxima da flutuação */
-        }
-    </style>
+    <title>Site sobre Investimento Baby Steps</title>
 </head>
+
 <body>
-    <h1>Escolha o tipo de investimento:</h1>
-    <button onclick="redirecionarRendaFixa()">Renda Fixa</button>
-    <button onclick="redirecionarRendaVariavel()">Renda Variável</button>
+    <main class="personagens">
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/.png"   alt="">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="Tipo-de-investimento"></h2>
+                <p class="descricao">.</p>
+            </div>
+        </div>
 
-    <!-- Imagens das criptomoedas espalhadas na tela -->
-    <img class="crypto-icon" src="bitcoin.svg" alt="Bitcoin" style="left: 10%; top: 20%;">
-    <img class="crypto-icon" src="ethereum.svg" alt="Ethereum" style="left: 40%; top: 50%;">
-    <img class="crypto-icon" src="litecoin.svg" alt="Litecoin" style="left: 70%; top: 80%;">
-    <!-- Adicione mais imagens de criptomoedas aqui -->
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/.png" alt="">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="Tipo-de-investimento"></h2>
+                <p class="descricao">.</p>
+            </div>
+        </div>
 
-    <script>
-        function redirecionarRendaFixa() {
-            window.location.href = "renda_fixa.html";
-        }
+        <div class="personagem selecionado">
+            <img class="imagem" src="./src/imagens/Investimento.png"alt=" Renda Fixa">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="Tipo-de-investimento">Renda fixa</h2>
+                <p class="descricao">A Renda Fixa é uma modalidade de investimento amplamente reconhecida por sua estabilidade e segurança. Nesse cenário, os investidores emprestam seu capital a instituições financeiras, governos ou empresas em troca de um retorno financeiro predefinido ao longo do tempo. Esta classe de ativos inclui uma variedade de instrumentos financeiros, como títulos públicos, debêntures, CDBs (Certificados de Depósito Bancário), LCIs (Letras de Crédito Imobiliário), LCAs (Letras de Crédito do Agronegócio), entre outros.</p>
+            </div>
+        </div>
 
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/.png" alt="">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="Tipo-de-investimento"></h2>
+                <p class="descricao">.</p>
+            </div>
+        </div>
+
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/.png" alt="">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="Tipo-de-investimento"></h2>
+                <p class="descricao">.</p>
+            </div>
+        </div>
+    </main>
+    <ul class="botoes">
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/.png" alt="">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/.png" alt="">
+            </button>
+        </li>
+        <li>
+            <button class="botao selecionado">
+                <img src="./src/imagens/.png" alt="Renda Fixa">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/.png" alt="">
+            </button>
+        </li>
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/.png" alt="">
+            </button>
+        </li>
+    </ul>
 </body>
+
 </html>
